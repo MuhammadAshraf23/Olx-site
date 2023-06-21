@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olx Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        background-color: rgb(119, 118, 118);
+    }
+
+    .email-login {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    display: flex;
+    right: auto;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out
+    }
+    .email-login .cross {
+    justify-content: space-between;
+}
+.cross {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.email-login img {
+    margin-top: 20px;
+    width: 60px;
+}
+.email-login h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.email-login input {
+    width: 90%;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.email-login button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+</style>
+
+<body>
+    <div class="email-login" id="email">
+        <div class="cross">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" onclick="closeEmail()">
+                <path d="M512 124.16v54.83L209.7 473.17l676.96.05L925.48 512l-38.82 38.78H209.75L512 845.01v54.87h-56.32L85.33 539.43v-54.86l370.35-360.4H512z">
+                </path>
+            </svg>
+            <svg width="25" height="25" fill-rule="evenodd" data-aut-id="icon" viewBox="0 0 1024 1024" onclick="closeEmail()">
+                <path d="M878.3 85.3L512 451.6 145.7 85.3H85.3v60.4L451.7 512 85.3 878.3v60.4h60.4L512 572.3l366.3 366.4h60.4v-60.4L572.4 512l366.3-366.3V85.3z" class="rui-22SD7"></path>
+            </svg>
+        </div>
+        <img src="https://www.olx.com.pk/assets/brandIconLogin_noinline.93e8a1a9cf50902ba5250814f57810ff.svg" class="login-logo">
+        <h2>Enter Your Email</h2>
+        <input type="search" id="email-input" placeholder="Enter Your Email">
+        <input type="password" id="password-input" placeholder="Enter Your Password">
+        <button onclick="login()">Login</button>
+        <small style="color: gray;">We won't reveal your email to anyone else nor use it to send you spam.</small>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

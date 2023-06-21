@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olx Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="login hidden" id="login">
+        <div class="login_form">
+            <img src="./images/logo.svg" alt="">
+            <h1>WELCOME TO OLX</h1>
+            <h2>The trusted community of buyers and sellers.</h2>
+            <button href="" class="loginSign_button"><img src="./images/facebok.svg" alt=""> Continue with
+                Facebook</button>
+            <button href="" class="loginSign_button" onclick="createAccount()"><img src="./images/googleIcon.svg"
+                    alt=""> Create Your Account</button>
+            <button href="" class="loginSign_button" onclick="emailLogin()"><img src="./images/email.svg" alt="">
+                Continue With Email</button>
+            <button href="" class="loginSign_button" id="phonelog" onclick="phoneLogin()"><img src="./images/phone.svg" alt="">
+                Continue with Phone</button>
+            <p>By continuing, you are accepting
+                <b>OLX Terms </b> of use and <b>Privacy Policy</b></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
